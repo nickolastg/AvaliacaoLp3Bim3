@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Resposta cadastro";
+}
+
+@if (ViewBag.Cadastrado)
+{
+    <h1>O cadastro de @ViewBag.Name foi realizado com sucesso</h1>
+}
+else
+{
+    <h1>O cadastro de @ViewBag.Name não foi concluído devido a um erro interno</h1>
+}
+
+<a href="/Shopping/Index">Voltar para os estabelecimentos</a>

@@ -1,0 +1,19 @@
+@model MvcRazorViews.ViewModels.LojaViewModel
+
+@{
+    ViewData["Title"] = $"Estabelecimento {@Model.Nome}";
+}
+
+<h1>@Model.Nome</h1>
+<p>Id: @Model.Id</p>
+
+<hr>
+
+<p>Tipo: @Model.Tipo</p>
+<p>Piso: @Model.Piso</p>
+<p>Descrição: @Model.Descricao</p>
+<p>Email: @Model.Email</p>
+
+<a href="/Shopping/Excluir/@Model.Id">
+    <button>Excluir estabelecimento</button>
+</a>

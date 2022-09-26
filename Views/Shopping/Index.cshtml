@@ -1,0 +1,14 @@
+@model List<MvcRazorViews.ViewModels.LojaViewModel>
+
+@{
+    ViewData["Title"] = "Estabelecimentos";
+}
+
+<h1>Estabelecimentos</h1>
+
+@foreach(var loja in Model)
+{
+    <h3>@loja.Nome</h3>
+    <p>@loja.Tipo</p>
+    <hr>
+}
